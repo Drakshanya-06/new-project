@@ -1,0 +1,171 @@
+/* Background setup like Forgot Password screen */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9fafb 0%, #f1f3f6 100%);
+  overflow: hidden;
+}
+
+/* Decorative circles */
+.circle-bg {
+  position: absolute;
+  border-radius: 50%;
+  background: #e5e6eb;
+  z-index: 0;
+}
+
+.circle-bg.top-left {
+  width: 450px;
+  height: 450px;
+  top: -150px;
+  left: -150px;
+  opacity: 0.4;
+}
+
+.circle-bg.bottom-right {
+  width: 350px;
+  height: 350px;
+  bottom: -100px;
+  right: -120px;
+  opacity: 0.3;
+}
+
+/* Card */
+.signup-card {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  width: 720px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 600;
+  color: #111;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Form styling */
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 16px;
+}
+
+.form-group {
+  flex: 1;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.input-container {
+  position: relative;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 38px 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f5f7ff;
+  outline: none;
+  font-size: 15px;
+}
+
+.input-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+/* Button */
+.auth-button {
+  width: 100%;
+  background: #000;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-button:hover {
+  background: #333;
+}
+
+/* Footer link */
+.switch-text {
+  margin-top: 20px;
+  color: #333;
+  font-size: 14px;
+}
+
+.switch-text a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.switch-text a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .signup-card {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}
+.error-message {
+  background-color: #fee;
+  color: #c33;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #fcc;
+  text-align: center;
+}
